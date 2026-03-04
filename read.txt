@@ -1,0 +1,118 @@
+PostgreSQL Employee Database Project
+
+This project demonstrates the creation and management of an Employee table using PostgreSQL.
+It includes 50 employee records and multiple SQL queries for practice.
+
+------------------------------------------------------------
+QUERIES WITH SHORT NOTES
+------------------------------------------------------------
+
+1. SELECT * 
+   → Displays all employee records.
+
+2. SELECT specific columns
+   → Shows selected fields like name, department, salary.
+
+3. COUNT(*)
+   → Counts total number of employees.
+
+4. WHERE department = 'IT'
+   → Filters employees from IT department.
+
+5. WHERE salary > 70000
+   → Shows employees earning more than 70000.
+
+6. WHERE hire_date > '2021-01-01'
+   → Employees hired after a specific date.
+
+7. WHERE city = 'Pune'
+   → Employees from a particular city.
+
+8. BETWEEN 50000 AND 80000
+   → Salary within a specific range.
+
+9. IN ('IT','HR')
+   → Filters multiple departments.
+
+10. LIKE 'A%'
+    → Names starting with letter A.
+
+11. ORDER BY salary DESC
+    → Sort employees by highest salary first.
+
+12. ORDER BY hire_date ASC
+    → Sort employees by oldest hire date.
+
+13. MAX(salary)
+    → Finds highest salary.
+
+14. MIN(salary)
+    → Finds lowest salary.
+
+15. AVG(salary)
+    → Calculates average salary.
+
+16. SUM(salary)
+    → Calculates total salary expense.
+
+17. GROUP BY department
+    → Groups employees by department.
+
+18. AVG(salary) GROUP BY department
+    → Average salary per department.
+
+19. HAVING COUNT(*) > 5
+    → Departments with more than 5 employees.
+
+20. Subquery (MAX salary)
+    → Finds employee with highest salary.
+
+21. Subquery (MIN salary)
+    → Finds employee with lowest salary.
+
+22. salary > AVG(salary)
+    → Employees earning above average.
+
+23. UPDATE salary
+    → Increases salary for IT department.
+
+24. UPDATE city
+    → Changes city from Pune to Mumbai.
+
+25. DELETE WHERE salary < 30000
+    → Deletes employees with low salary.
+
+26. EXTRACT(YEAR FROM hire_date)
+    → Filters employees hired in specific year.
+
+27. AGE(CURRENT_DATE, hire_date)
+    → Calculates years of service.
+
+28. LIMIT 5
+    → Shows top 5 records.
+
+29. OFFSET 5
+    → Skips first 5 records.
+
+30. CASE statement
+    → Categorizes salary as High, Medium, Low.
+
+31. DISTINCT department
+    → Shows unique departments.
+
+32. DISTINCT city
+    → Shows unique cities.
+
+------------------------------------------------------------
+
+Technologies Used:
+- PostgreSQL
+- SQL
+
+How to Run:
+1. Run schema.sql
+2. Run insert_data.sql
+3. Run queries.sql
+
+This project is useful for practicing SQL fundamentals,
+intermediate queries, and MCA-level database concepts.
